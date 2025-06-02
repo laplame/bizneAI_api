@@ -1,0 +1,437 @@
+2025-06-02T12:24:10: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:10: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:10: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:11: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:11: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:11: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:12: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:12: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:12: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:12: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:13: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:13: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:13: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:14: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:14: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:14: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:51: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:51: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:52: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:52: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:52: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:53: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:53: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:53: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:54: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:54: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:54: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:54: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:55: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:55: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:55: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:24:55: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:25:36: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:25:36: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:25:37: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:25:37: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:25:37: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:25:38: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:25:38: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:25:38: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:25:39: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:25:39: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:25:39: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:25:40: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:25:40: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:25:40: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:25:41: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:25:41: [32m✔ Connected to MongoDB[0m
+Error: bind EADDRINUSE null:3000
+    at listenOnPrimaryHandle (node:net:1970:18)
+    at rr (node:internal/cluster/child:163:12)
+    at Worker.<anonymous> (node:internal/cluster/child:113:7)
+    at process.onInternalMessage (node:internal/cluster/utils:49:5)
+    at process.emit (node:events:531:35)
+    at emit (node:internal/child_process:951:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-06-02T12:37:52: [32m✔ Connected to MongoDB[0m
+2025-06-02T12:37:52: [36m========================================[0m
+2025-06-02T12:37:52: [36m🚀 Server is running on http://localhost:8080[0m
+2025-06-02T12:37:52: [36m📚 API Documentation: http://localhost:8080/api-docs[0m
+2025-06-02T12:37:52: [36m========================================[0m

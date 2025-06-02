@@ -73,6 +73,25 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(responseMiddleware);
 
+// Root route
+app.get('/', (req, res) => {
+  res.json({
+    status: 'success',
+    message: 'Welcome to BizneAI API',
+    version: '1.0.0',
+    documentation: '/api-docs',
+    endpoints: {
+      auth: '/api/auth',
+      users: '/api/users',
+      products: '/api/products',
+      pos: '/api/pos',
+      roles: '/api/roles',
+      ecommerce: '/api/ecommerce',
+      config: '/api/config'
+    }
+  });
+});
+
 // Swagger Documentation
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec, {
   customCss: `
