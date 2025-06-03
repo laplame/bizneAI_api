@@ -11,9 +11,15 @@ const User = require('../models/user.model');
 
 async function initializeDatabase() {
   try {
-    // Connect to MongoDB
-    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/bizneai_db');
-    console.log('Connected to MongoDB');
+    if (!process.env.MONGODB_ATLAS_URI) {
+      throw new Error('MONGODB_ATLAS_URI is not configured in environment variables');
+    }
+
+    // Connect to MongoDB Atlas
+    await mongoose.connect(process.env.MONGODB_ATLAS_URI, {
+      serverSelectionTimeoutMS: 5000
+    });
+    console.log('Connected to MongoDB Atlas');
 
     // Create admin role
     const adminRole = await Role.findOneAndUpdate(
@@ -76,6 +82,13 @@ async function initializeDatabase() {
 
   } catch (error) {
     console.error('Error initializing database:', error);
+    if (error.message.includes('MONGODB_ATLAS_URI')) {
+      console.log('\nPlease check your MongoDB Atlas configuration:');
+      console.log('1. Ensure MONGODB_ATLAS_URI is set in your .env file');
+      console.log('2. Verify your Atlas cluster is running');
+      console.log('3. Check your IP address is whitelisted in Atlas');
+      console.log('4. Verify your username and password are correct');
+    }
   } finally {
     await mongoose.disconnect();
   }

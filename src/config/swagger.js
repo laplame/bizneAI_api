@@ -41,10 +41,25 @@ const options = {
           properties: {
             id: { type: 'string' },
             name: { type: 'string' },
-            description: { type: 'string' },
             price: { type: 'number' },
+            cost: { type: 'number' },
+            description: { type: 'string' },
+            category: { type: 'string' },
+            photoFilename: { type: 'string' },
+            photoUrl: { type: 'string' },
+            isWeightBased: { type: 'boolean' },
+            metadata: {
+              type: 'object',
+              properties: {
+                createdAt: { type: 'string', format: 'date-time' },
+                platform: { type: 'string', enum: ['ios', 'android', 'web'] },
+                hasLocalPhoto: { type: 'boolean' },
+                hasCloudinaryUrl: { type: 'boolean' },
+                isWeightBased: { type: 'boolean' }
+              }
+            },
             stock: { type: 'number' },
-            category: { type: 'string' }
+            isActive: { type: 'boolean' }
           }
         },
         Sale: {

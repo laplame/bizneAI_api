@@ -79,11 +79,11 @@ A robust RESTful API for a Point of Sale (POS) system, built with Node.js, Expre
 Create a `.env` file in the root directory with the following content:
 ```
 PORT=3000
-MONGODB_URI=mongodb://localhost:27017/bizneai_db
+MONGODB_ATLAS_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/bizneai_db
 JWT_SECRET=your-super-secret-key
 ```
 - `PORT`: Port for the Express server (default: 3000)
-- `MONGODB_URI`: MongoDB connection string
+- `MONGODB_ATLAS_URI`: MongoDB Atlas connection string
 - `JWT_SECRET`: Secret key for JWT signing
 
 ---

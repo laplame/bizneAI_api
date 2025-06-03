@@ -23,7 +23,43 @@ exports.getProductById = async (req, res) => {
 
 exports.createProduct = async (req, res) => {
   try {
-    const product = new Product(req.body);
+    const {
+      name,
+      price,
+      cost,
+      description,
+      category,
+      photoFilename,
+      photoUrl,
+      isWeightBased,
+      metadata
+    } = req.body;
+
+    // Validate required fields
+    if (!name || !price || !cost || !category) {
+      return res.status(400).json({ message: 'Missing required fields' });
+    }
+
+    // Create product with metadata
+    const product = new Product({
+      name,
+      price,
+      cost,
+      description,
+      category,
+      photoFilename,
+      photoUrl,
+      isWeightBased,
+      metadata: {
+        ...metadata,
+        createdAt: metadata?.createdAt || new Date(),
+        platform: metadata?.platform || 'web',
+        hasLocalPhoto: metadata?.hasLocalPhoto || false,
+        hasCloudinaryUrl: metadata?.hasCloudinaryUrl || false,
+        isWeightBased: metadata?.isWeightBased || false
+      }
+    });
+
     await product.save();
     res.status(201).json(product, 'Product created successfully');
   } catch (error) {
@@ -38,7 +74,41 @@ exports.updateProduct = async (req, res) => {
       return res.status(404).json({ message: 'Product not found' });
     }
 
-    Object.assign(product, req.body);
+    const {
+      name,
+      price,
+      cost,
+      description,
+      category,
+      photoFilename,
+      photoUrl,
+      isWeightBased,
+      metadata
+    } = req.body;
+
+    // Update product fields
+    if (name) product.name = name;
+    if (price !== undefined) product.price = price;
+    if (cost !== undefined) product.cost = cost;
+    if (description !== undefined) product.description = description;
+    if (category) product.category = category;
+    if (photoFilename !== undefined) product.photoFilename = photoFilename;
+    if (photoUrl !== undefined) product.photoUrl = photoUrl;
+    if (isWeightBased !== undefined) product.isWeightBased = isWeightBased;
+
+    // Update metadata if provided
+    if (metadata) {
+      product.metadata = {
+        ...product.metadata,
+        ...metadata,
+        createdAt: metadata.createdAt || product.metadata.createdAt,
+        platform: metadata.platform || product.metadata.platform,
+        hasLocalPhoto: metadata.hasLocalPhoto ?? product.metadata.hasLocalPhoto,
+        hasCloudinaryUrl: metadata.hasCloudinaryUrl ?? product.metadata.hasCloudinaryUrl,
+        isWeightBased: metadata.isWeightBased ?? product.metadata.isWeightBased
+      };
+    }
+
     await product.save();
     res.json(product, 'Product updated successfully');
   } catch (error) {

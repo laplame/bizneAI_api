@@ -26,26 +26,22 @@ const app = express();
 // Function to check if MongoDB is running
 const checkMongoDBConnection = async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/bizneai_db', {
+    if (!process.env.MONGODB_ATLAS_URI) {
+      throw new Error('MONGODB_ATLAS_URI is not configured in environment variables');
+    }
+
+    await mongoose.connect(process.env.MONGODB_ATLAS_URI, {
       serverSelectionTimeoutMS: 5000 // Timeout after 5s instead of 30s
     });
-    console.log('\x1b[32m%s\x1b[0m', '✔ Connected to MongoDB');
+    console.log('\x1b[32m%s\x1b[0m', '✔ Connected to MongoDB Atlas');
     return true;
   } catch (error) {
-    console.error('\x1b[31m%s\x1b[0m', '❌ MongoDB connection error:', error.message);
-    console.log('\n\x1b[33m%s\x1b[0m', '📋 To start MongoDB, please follow these instructions:');
-    console.log('\x1b[36m%s\x1b[0m', '1. For macOS (using Homebrew):');
-    console.log('   - Start MongoDB: brew services start mongodb-community');
-    console.log('   - Stop MongoDB: brew services stop mongodb-community');
-    console.log('   - Restart MongoDB: brew services restart mongodb-community');
-    console.log('\x1b[36m%s\x1b[0m', '2. For Windows:');
-    console.log('   - Start MongoDB service from Services application');
-    console.log('   - Or use command: net start MongoDB');
-    console.log('\x1b[36m%s\x1b[0m', '3. For Linux:');
-    console.log('   - Start MongoDB: sudo systemctl start mongod');
-    console.log('   - Stop MongoDB: sudo systemctl stop mongod');
-    console.log('   - Restart MongoDB: sudo systemctl restart mongod');
-    console.log('\n\x1b[33m%s\x1b[0m', 'After starting MongoDB, restart this server application.');
+    console.error('\x1b[31m%s\x1b[0m', '❌ MongoDB Atlas connection error:', error.message);
+    console.log('\n\x1b[33m%s\x1b[0m', '📋 Please check your MongoDB Atlas configuration:');
+    console.log('\x1b[36m%s\x1b[0m', '1. Ensure MONGODB_ATLAS_URI is set in your .env file');
+    console.log('\x1b[36m%s\x1b[0m', '2. Verify your Atlas cluster is running');
+    console.log('\x1b[36m%s\x1b[0m', '3. Check your IP address is whitelisted in Atlas');
+    console.log('\x1b[36m%s\x1b[0m', '4. Verify your username and password are correct');
     return false;
   }
 };

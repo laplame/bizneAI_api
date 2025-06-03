@@ -6,16 +6,6 @@ const productSchema = new mongoose.Schema({
     required: true,
     trim: true
   },
-  sku: {
-    type: String,
-    required: true,
-    unique: true,
-    trim: true
-  },
-  description: {
-    type: String,
-    trim: true
-  },
   price: {
     type: Number,
     required: true,
@@ -26,16 +16,55 @@ const productSchema = new mongoose.Schema({
     required: true,
     min: 0
   },
-  stock: {
-    type: Number,
-    required: true,
-    min: 0,
-    default: 0
+  description: {
+    type: String,
+    trim: true
   },
   category: {
     type: String,
     required: true,
     trim: true
+  },
+  photoFilename: {
+    type: String,
+    trim: true
+  },
+  photoUrl: {
+    type: String,
+    trim: true
+  },
+  isWeightBased: {
+    type: Boolean,
+    default: false
+  },
+  metadata: {
+    createdAt: {
+      type: Date,
+      default: Date.now
+    },
+    platform: {
+      type: String,
+      enum: ['ios', 'android', 'web'],
+      default: 'web'
+    },
+    hasLocalPhoto: {
+      type: Boolean,
+      default: false
+    },
+    hasCloudinaryUrl: {
+      type: Boolean,
+      default: false
+    },
+    isWeightBased: {
+      type: Boolean,
+      default: false
+    }
+  },
+  stock: {
+    type: Number,
+    required: true,
+    min: 0,
+    default: 0
   },
   isActive: {
     type: Boolean,
