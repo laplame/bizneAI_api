@@ -23,7 +23,7 @@ command_exists() {
 }
 
 # Check for required commands
-for cmd in node npm pm2; do
+for cmd in node npm pm2 serve; do
     if ! command_exists $cmd; then
         handle_error "$cmd is not installed"
     fi
@@ -37,19 +37,35 @@ echo -e "${YELLOW}Setting up permissions...${NC}"
 sudo chown -R $USER:$USER . || handle_error "Failed to set ownership"
 sudo chmod -R 755 . || handle_error "Failed to set permissions"
 
+# Frontend deployment
+echo -e "${YELLOW}Deploying frontend...${NC}"
+cd frontend || handle_error "Failed to change to frontend directory"
+
 # Clean and create dist directory
-echo -e "${YELLOW}Preparing build directory...${NC}"
+echo -e "${YELLOW}Preparing frontend build directory...${NC}"
 rm -rf dist || true
 mkdir -p dist || handle_error "Failed to create dist directory"
 chmod 755 dist || handle_error "Failed to set dist permissions"
 
 # Install dependencies
-echo -e "${YELLOW}Installing dependencies...${NC}"
-npm install || handle_error "Failed to install dependencies"
+echo -e "${YELLOW}Installing frontend dependencies...${NC}"
+npm install || handle_error "Failed to install frontend dependencies"
 
-# Build the application
-echo -e "${YELLOW}Building the application...${NC}"
-npm run build || handle_error "Failed to build application"
+# Build the frontend
+echo -e "${YELLOW}Building frontend...${NC}"
+npm run build || handle_error "Failed to build frontend"
+
+# Backend deployment
+echo -e "${YELLOW}Deploying backend...${NC}"
+cd ../backend || handle_error "Failed to change to backend directory"
+
+# Install dependencies
+echo -e "${YELLOW}Installing backend dependencies...${NC}"
+npm install || handle_error "Failed to install backend dependencies"
+
+# Build the backend
+echo -e "${YELLOW}Building backend...${NC}"
+npm run build || handle_error "Failed to build backend"
 
 # Check if PM2 is running
 if ! pm2 ping > /dev/null 2>&1; then
@@ -57,14 +73,20 @@ if ! pm2 ping > /dev/null 2>&1; then
     pm2 start || handle_error "Failed to start PM2 daemon"
 fi
 
-# Stop existing instance if running
-echo -e "${YELLOW}Stopping existing instance...${NC}"
-pm2 stop bizneai-api || true
-pm2 delete bizneai-api || true
+# Stop existing instances if running
+echo -e "${YELLOW}Stopping existing instances...${NC}"
+pm2 stop bizneai-frontend bizneai-backend || true
+pm2 delete bizneai-frontend bizneai-backend || true
 
-# Start the application with PM2
-echo -e "${YELLOW}Starting application with PM2...${NC}"
-pm2 start ecosystem.config.js --env production || handle_error "Failed to start application"
+# Start the backend with PM2
+echo -e "${YELLOW}Starting backend with PM2...${NC}"
+cd ../backend
+pm2 start dist/server.js --name bizneai-backend || handle_error "Failed to start backend"
+
+# Start the frontend with PM2
+echo -e "${YELLOW}Starting frontend with PM2...${NC}"
+cd ../frontend
+pm2 start "serve -s dist -l 3000" --name bizneai-frontend || handle_error "Failed to start frontend"
 
 # Save PM2 process list
 echo -e "${YELLOW}Saving PM2 process list...${NC}"
@@ -75,5 +97,8 @@ echo -e "${YELLOW}Setting up PM2 startup script...${NC}"
 pm2 startup || handle_error "Failed to setup PM2 startup"
 
 echo -e "${GREEN}Deployment completed successfully!${NC}"
-echo -e "${GREEN}Application is running on port 8080${NC}"
-echo -e "${YELLOW}You can check the logs with: pm2 logs bizneai-api${NC}" 
+echo -e "${GREEN}Backend is running on port 8080${NC}"
+echo -e "${GREEN}Frontend is running on port 3000${NC}"
+echo -e "${YELLOW}You can check the logs with:${NC}"
+echo -e "${YELLOW}  - Backend logs: pm2 logs bizneai-backend${NC}"
+echo -e "${YELLOW}  - Frontend logs: pm2 logs bizneai-frontend${NC}" 
